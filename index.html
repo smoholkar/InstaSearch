@@ -7,12 +7,18 @@
                 background-color: black;
                 opacity:0.5 ;
             }
+
+            .title {
+                color: #FFFFFF;
+            }
         </style>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js" type="text/javascript"></script>
     </head>
     <body>
     <div class="background">
-    Enter any hashtag & I'll find you the pics ..
+
+   <b class="title"> Enter any hashtag & I'll find you the pics .. </b>
+        <br><br><br>
     <li ng-controller="QueryController">
         <form ng-submit="queryInstagram(hashtag)">
             <input type="text" name="hashtag" ng-model="hashtag" required="" />
